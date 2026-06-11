@@ -7,7 +7,7 @@
   <meta name="x-apple-disable-message-reformatting">
   <meta name="color-scheme" content="light only">
   <meta name="supported-color-schemes" content="light only">
-  <title>Ericeira, Another Way</title>
+  <title>Portugal, Another Way</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -30,13 +30,20 @@
     /* ---- Mobile ---- */
     @media only screen and (max-width: 600px) {
       .container { width: 100% !important; }
-      .col { display: block !important; width: 100% !important; max-width: 100% !important; }
       .img-fluid { width: 100% !important; max-width: 100% !important; height: auto !important; }
       .px { padding-left: 26px !important; padding-right: 26px !important; }
-      .mast-r { text-align: center !important; padding-top: 8px !important; }
-      .mast-l { text-align: center !important; }
+      .mast-l, .mast-r { display: block !important; width: 100% !important; text-align: center !important; }
+      .mast-r { padding-top: 8px !important; }
       .cell-pad { padding: 30px 28px !important; }
       .h-hero { font-size: 40px !important; line-height: 1.08 !important; }
+
+      /* Checkerboard stays two-up on mobile; background image fills the full cell height */
+      .ck-img { width: 50% !important; height: 188px !important; background-size: cover !important; }
+      .ck-txt { width: 50% !important; height: 188px !important; padding: 12px 12px !important; }
+      .ck-txt > div:nth-of-type(1) { font-size: 8px !important; letter-spacing: 0.1em !important; }
+      .ck-txt > div:nth-of-type(2) { font-size: 14px !important; line-height: 1.14 !important; padding-top: 4px !important; }
+      .ck-txt > div:nth-of-type(3) { font-size: 10px !important; line-height: 1.38 !important; padding-top: 4px !important; }
+
       .steps-col { display: block !important; width: 100% !important; }
       .steps-col-mid { display: none !important; }
       .step-gap { height: 16px !important; line-height: 16px !important; }
@@ -50,80 +57,58 @@
     Ericeira, Portugal — 2026. How a week on the Atlantic coast actually unfolds. Mornings, surf, the table, and the people you arrive beside.
   </div>
 
-  <!-- Full-bleed background -->
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F4ECDD;">
     <tr>
       <td align="center" style="padding:0;">
-
         <!--[if mso]><table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->
         <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; background-color:#F4ECDD;">
 
-          <!-- ============ MASTHEAD ============ -->
+          <!-- MASTHEAD -->
           <tr>
             <td class="px" style="padding:26px 36px 22px 36px; border-bottom:1px solid rgba(27,24,21,0.10);">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="mast-l col" align="left" valign="middle" width="55%" style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:25px; letter-spacing:0.01em; color:#1B1815;">
-                    Rare Seasons
-                  </td>
-                  <td class="mast-r col" align="right" valign="middle" width="45%" style="font-family:'Lato',Arial,sans-serif; font-weight:400; font-size:13px; line-height:1.4; color:#332D27;">
-                    What the week holds.
-                  </td>
+                  <td class="mast-l" align="left" valign="middle" width="55%" style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:25px; letter-spacing:0.01em; color:#1B1815;">Rare Seasons</td>
+                  <td class="mast-r" align="right" valign="middle" width="45%" style="font-family:'Lato',Arial,sans-serif; font-weight:400; font-size:13px; line-height:1.4; color:#332D27;">What the week holds.</td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- ============ HERO IMAGE ============ -->
+          <!-- HERO IMAGE -->
           <tr>
             <td style="padding:0; font-size:0; line-height:0;">
-              <img class="img-fluid" src="images/aethos-pool-hero-paris.jpg" width="600" height="447" alt="Aethos Ericeira from above — the saltwater pool, timber deck, white parasols and sun loungers" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+              <img class="img-fluid" src="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/44aba95f-9ae1-4d39-abfc-42bbac8bceda.jpeg" width="600" height="447" alt="Aethos Ericeira from above — the saltwater pool, timber deck, white parasols and sun loungers" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
             </td>
           </tr>
 
-          <!-- ============ HERO COPY ============ -->
+          <!-- HERO COPY -->
           <tr>
             <td class="cell-pad" align="center" style="padding:44px 44px 40px 44px; background-color:#F4ECDD;">
-              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A85F3D; text-align:center;">
-                Ericeira&nbsp;&middot;&nbsp;Portugal&nbsp;&middot;&nbsp;2026
-              </div>
-              <div class="h-hero" style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:46px; line-height:1.1; letter-spacing:-0.01em; color:#1B1815; text-align:center; padding-top:16px;">
-                Portugal, Another Way
-              </div>
-              <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:400; font-size:19px; line-height:1.5; color:#332D27; text-align:center; padding-top:14px;">
-                This isn&rsquo;t your standard Portugal trip. This is a one-of-a-kind, elevated experience.
-              </div>
+              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A85F3D; text-align:center;">Ericeira&nbsp;&middot;&nbsp;Portugal&nbsp;&middot;&nbsp;2026</div>
+              <div class="h-hero" style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:46px; line-height:1.1; letter-spacing:-0.01em; color:#1B1815; text-align:center; padding-top:16px;">Portugal, Another Way</div>
+              <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:400; font-size:19px; line-height:1.5; color:#332D27; text-align:center; padding-top:14px;">This isn&rsquo;t your standard Portugal trip. This is a one-of-a-kind, elevated experience.</div>
               <div style="width:60px; height:1px; background-color:#C2724A; line-height:1px; font-size:0; margin:26px auto 24px auto;">&nbsp;</div>
-              <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:16px; line-height:1.7; color:#332D27; text-align:center;">
-                For one week in Ericeira you wake to the ocean, move before the town stirs, eat what the coast gives, and share the table with people who arrived as strangers and are leaving as friends.<br><br>Here is how the days unfold.
-              </div>
-              <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:400; font-size:16px; color:#1B1815; text-align:center; padding-top:22px;">
-                &mdash; Aaron, Rare Seasons
-              </div>
+              <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:16px; line-height:1.7; color:#332D27; text-align:center;">For one week in Ericeira you wake to the ocean, move before the town stirs, eat what the coast gives, and share the table with people who arrived as strangers and are leaving as friends.<br><br>Here is how the days unfold.</div>
+              <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:400; font-size:16px; color:#1B1815; text-align:center; padding-top:22px;">&mdash; Aaron, Rare Seasons</div>
             </td>
           </tr>
 
-          <!-- ============ SECTION HEADER: THE DAYS ============ -->
+          <!-- SECTION HEADER: THE DAYS -->
           <tr>
             <td align="center" style="padding:14px 44px 30px 44px; background-color:#F4ECDD;">
-              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A88E6F; text-align:center;">
-                The Week
-              </div>
-              <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:34px; line-height:1.12; color:#1B1815; text-align:center; padding-top:10px;">
-                The Days
-              </div>
+              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A88E6F; text-align:center;">The Week</div>
+              <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:34px; line-height:1.12; color:#1B1815; text-align:center; padding-top:10px;">The Days</div>
             </td>
           </tr>
 
-          <!-- ===== DAY 01 — image left / text right (bone) ===== -->
+          <!-- DAY 01 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/leigh-yoga-beach-paris.jpg" width="300" height="300" alt="Morning yoga on the beach at first light, arm sweeping overhead, boats on the calm water behind" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 72%; border:0;">
-                  </td>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#EDE3D2;">
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/4e9347d9-d27f-4596-860d-052d48b1754a.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/4e9347d9-d27f-4596-860d-052d48b1754a.jpeg'); background-position:50% 72%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#EDE3D2;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A85F3D;">01&nbsp;&middot;&nbsp;The Morning</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:23px; line-height:1.18; color:#1B1815; padding-top:8px;">Yoga &amp; Breathwork with Leigh</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#332D27; padding-top:9px;">Move and breathe before the town wakes, led each morning by Leigh.</div>
@@ -133,33 +118,29 @@
             </td>
           </tr>
 
-          <!-- ===== DAY 02 — text left (ink) / image right ===== -->
+          <!-- DAY 02 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#1B1815;">
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#1B1815;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#C2724A;">02&nbsp;&middot;&nbsp;The Water</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:23px; line-height:1.18; color:#F4ECDD; padding-top:8px;">Surf Lessons on the Coast</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#EDE3D2; padding-top:9px;">Guided by the best local instructors. You&rsquo;ll be catching waves no matter what level you are.</div>
                   </td>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/aerial-surf-paris.jpg" width="300" height="300" alt="Aerial view of surfers waiting on their boards in deep green water" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 50%; border:0;">
-                  </td>
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/dfd3aee9-7444-4a02-87ff-758c6c168680.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/dfd3aee9-7444-4a02-87ff-758c6c168680.jpeg'); background-position:50% 50%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- ===== DAY 03 — image left / text right (bone) ===== -->
+          <!-- DAY 03 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/spa-massage-table-paris.jpg" width="300" height="300" alt="A calm spa treatment room, draped massage table by a sheer-curtained window with sea light" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 50%; border:0;">
-                  </td>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#EDE3D2;">
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/ec98f679-e672-4ba4-bc5d-bec8e801cca0.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/ec98f679-e672-4ba4-bc5d-bec8e801cca0.jpeg'); background-position:50% 50%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#EDE3D2;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A85F3D;">03&nbsp;&middot;&nbsp;The Reset</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:23px; line-height:1.18; color:#1B1815; padding-top:8px;">A Spa Day, Your Way</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#332D27; padding-top:9px;">One afternoon set aside for a massage or a facial.</div>
@@ -169,33 +150,29 @@
             </td>
           </tr>
 
-          <!-- ===== DAY 04 — text left (ink) / image right ===== -->
+          <!-- DAY 04 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#1B1815;">
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#1B1815;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#C2724A;">04&nbsp;&middot;&nbsp;The Table</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:23px; line-height:1.18; color:#F4ECDD; padding-top:8px;">Group Dinners &amp; One Surprise</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#EDE3D2; padding-top:9px;">Long dinners through the week and one surprise event for the group.</div>
                   </td>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/group-dinner-sunset-paris.jpg" width="300" height="300" alt="A lively clifftop terrace at golden hour, guests dining and gathering over the sea" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 50%; border:0;">
-                  </td>
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/cfd0c77d-f4ba-4788-9b0a-6174a9a29da6.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/cfd0c77d-f4ba-4788-9b0a-6174a9a29da6.jpeg'); background-position:50% 50%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- ===== DAY 05 — image left / text right (bone) ===== -->
+          <!-- DAY 05 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/lisbon-praca-paris.jpg" width="300" height="300" alt="Aerial of Lisbon's Praça do Comércio at golden hour, the grand square meeting the Tagus" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 42%; border:0;">
-                  </td>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#EDE3D2;">
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/bb4ada73-b012-4d19-b9ea-2b92a48c630d.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/bb4ada73-b012-4d19-b9ea-2b92a48c630d.jpeg'); background-position:50% 42%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#EDE3D2;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A85F3D;">05&nbsp;&middot;&nbsp;The Day Out</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:23px; line-height:1.18; color:#1B1815; padding-top:8px;">A Private Charter to Lisbon</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#332D27; padding-top:9px;">One chartered day trip down to the capital, for a full day of exploration.</div>
@@ -205,54 +182,40 @@
             </td>
           </tr>
 
-          <!-- ============ THE ACCOMMODATIONS ============ -->
+          <!-- THE ACCOMMODATIONS -->
           <tr>
             <td align="center" style="padding:54px 44px 26px 44px; background-color:#F4ECDD;">
-              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A88E6F; text-align:center;">
-                Where You Stay
-              </div>
-              <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:34px; line-height:1.12; color:#1B1815; text-align:center; padding-top:10px;">
-                The Accommodations
-              </div>
+              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A88E6F; text-align:center;">Where You Stay</div>
+              <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:34px; line-height:1.12; color:#1B1815; text-align:center; padding-top:10px;">The Accommodations</div>
             </td>
           </tr>
           <tr>
-            <td style="padding:0 0 0 0; font-size:0; line-height:0;">
-              <img class="img-fluid" src="images/aethos-cliff-paris.jpg" width="600" height="400" alt="Aethos Ericeira perched on the cliff edge above the Atlantic at golden hour" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+            <td style="padding:0; font-size:0; line-height:0;">
+              <img class="img-fluid" src="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/08bcbc60-c5fe-4575-a131-f8b3370a5399.jpeg" width="600" height="400" alt="Aethos Ericeira perched on the cliff edge above the Atlantic at golden hour" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
             </td>
           </tr>
           <tr>
             <td class="cell-pad" align="center" style="padding:36px 48px 50px 48px; background-color:#F4ECDD;">
-              <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:24px; line-height:1.25; color:#1B1815; text-align:center;">
-                Aethos Ericeira
-              </div>
-              <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:16px; line-height:1.7; color:#332D27; text-align:center; padding-top:16px;">
-                A five-star hotel with sweeping views over the Atlantic, ten minutes from the centre of Ericeira. Days open and close at ONDA, the onsite culinary spectacle.
-              </div>
-              <div style="font-family:'Lato',Arial,sans-serif; font-weight:400; font-size:13px; line-height:1.7; letter-spacing:0.08em; color:#8C7F6E; text-align:center; padding-top:18px;">
-                Gym&nbsp;&nbsp;&middot;&nbsp;&nbsp;Saltwater Pool&nbsp;&nbsp;&middot;&nbsp;&nbsp;Sauna&nbsp;&nbsp;&middot;&nbsp;&nbsp;Ocean Views
-              </div>
+              <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:24px; line-height:1.25; color:#1B1815; text-align:center;">Aethos Ericeira</div>
+              <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:16px; line-height:1.7; color:#332D27; text-align:center; padding-top:16px;">A five-star hotel with sweeping views over the Atlantic, ten minutes from the centre of Ericeira. Days open and close at ONDA, the onsite culinary spectacle.</div>
+              <div style="font-family:'Lato',Arial,sans-serif; font-weight:400; font-size:13px; line-height:1.7; letter-spacing:0.08em; color:#8C7F6E; text-align:center; padding-top:18px;">Gym&nbsp;&nbsp;&middot;&nbsp;&nbsp;Saltwater Pool&nbsp;&nbsp;&middot;&nbsp;&nbsp;Sauna&nbsp;&nbsp;&middot;&nbsp;&nbsp;Ocean Views</div>
             </td>
           </tr>
 
-          <!-- ============ THE RARE SEASONS DIFFERENCE ============ -->
+          <!-- THE RARE SEASONS DIFFERENCE -->
           <tr>
             <td align="center" style="padding:48px 44px 30px 44px; background-color:#1B1815;">
-              <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:34px; line-height:1.12; color:#F4ECDD; text-align:center;">
-                The Rare Seasons Difference
-              </div>
+              <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:34px; line-height:1.12; color:#F4ECDD; text-align:center;">The Rare Seasons Difference</div>
             </td>
           </tr>
 
-          <!-- ===== DIFF 01 — image left / text right (linen) ===== -->
+          <!-- DIFF 01 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/boutique-entryway-paris.jpg" width="300" height="300" alt="A grand double-height hotel lounge with arched windows framing the sea, warm minimalist interiors" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 34%; border:0;">
-                  </td>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#E6DAC2;">
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/357530b2-f56a-4878-b282-b727e1408367.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/357530b2-f56a-4878-b282-b727e1408367.jpeg'); background-position:50% 34%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#E6DAC2;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A85F3D;">The Stay</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:22px; line-height:1.18; color:#1B1815; padding-top:8px;">Private Boutique Hotel</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#332D27; padding-top:9px;">A five-star hotel, full of amenities, and designed for privacy.</div>
@@ -262,33 +225,29 @@
             </td>
           </tr>
 
-          <!-- ===== DIFF 02 — text left (ink) / image right ===== -->
+          <!-- DIFF 02 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#1B1815;">
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#1B1815;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#C2724A;">The Practice</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:22px; line-height:1.18; color:#F4ECDD; padding-top:8px;">Daily Wellness Sessions</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#EDE3D2; padding-top:9px;">Led every day by a top-tier instructor who is the heartbeat of the group all week.</div>
                   </td>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/wellness-yoga-deck-paris.jpg" width="300" height="300" alt="Yoga mats laid out on a clifftop deck overlooking the ocean, ready for a morning session" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 84%; border:0;">
-                  </td>
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/2f50c5d8-b44f-4503-852d-053e7f164e3c.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/2f50c5d8-b44f-4503-852d-053e7f164e3c.jpeg'); background-position:50% 84%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- ===== DIFF 03 — image left / text right (linen) ===== -->
+          <!-- DIFF 03 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/culinary-food-wine-paris.jpg" width="300" height="300" alt="Red wine poured at a candlelit table set with plated dishes and rose petals" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 44%; border:0;">
-                  </td>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#E6DAC2;">
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/3dbf0363-c252-4a3c-b1c9-feb23ffac174.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/3dbf0363-c252-4a3c-b1c9-feb23ffac174.jpeg'); background-position:50% 44%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#E6DAC2;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#A85F3D;">The Table</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:22px; line-height:1.18; color:#1B1815; padding-top:8px;">A True Culinary Experience</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#332D27; padding-top:9px;">We source and book the best restaurants for a local culinary experience.</div>
@@ -298,43 +257,38 @@
             </td>
           </tr>
 
-          <!-- ===== DIFF 04 — text left (ink) / image right ===== -->
+          <!-- DIFF 04 -->
           <tr>
             <td style="padding:0;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <td class="col cell-pad" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#1B1815;">
+                  <td class="ck-txt" width="300" valign="middle" align="left" style="height:300px; box-sizing:border-box; padding:34px 30px; background-color:#1B1815;">
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#C2724A;">The People</div>
                     <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:22px; line-height:1.18; color:#F4ECDD; padding-top:8px;">A Curated Group of Peers</div>
                     <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:14px; line-height:1.6; color:#EDE3D2; padding-top:9px;">Like-minded company, chosen with care. Most arrive solo. All leave with friends.</div>
                   </td>
-                  <td class="col" width="300" valign="top" style="padding:0; font-size:0; line-height:0;">
-                    <img class="img-fluid" src="images/group-peers-sunset-paris.jpg" width="300" height="300" alt="A small group gathered in chairs at sunset on a terrace, sharing wine over the sea" style="display:block; width:100%; max-width:300px; height:300px; object-fit:cover; object-position:50% 58%; border:0;">
-                  </td>
+                  <td class="ck-img" width="300" valign="top" background="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/f61b352e-9642-4c6c-9232-b2c0030cd8c5.jpeg" style="padding:0; height:300px; line-height:0; font-size:0; background-image:url('https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/f61b352e-9642-4c6c-9232-b2c0030cd8c5.jpeg'); background-position:50% 58%; background-size:cover; background-repeat:no-repeat;">&nbsp;</td>
                 </tr>
               </table>
             </td>
           </tr>
 
-          <!-- ============ CONVERSION BLOCK — THREE STEPS ============ -->
+          <!-- TAN DIVIDER -->
           <tr>
             <td style="padding:0; font-size:0; line-height:0; height:56px; background-color:#E6DAC2;">&nbsp;</td>
           </tr>
+
+          <!-- CONVERSION BLOCK — THREE STEPS -->
           <tr>
             <td class="cell-pad" align="center" style="padding:56px 40px 16px 40px; background-color:#1B1815;">
-              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#C2724A; text-align:center;">
-                Three Steps
-              </div>
-              <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:32px; line-height:1.12; color:#F4ECDD; text-align:center; padding-top:10px;">
-                Reserve Your Place
-              </div>
+              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#C2724A; text-align:center;">Three Steps</div>
+              <div style="font-family:'Lora',Georgia,serif; font-weight:500; font-size:32px; line-height:1.12; color:#F4ECDD; text-align:center; padding-top:10px;">Reserve Your Place</div>
             </td>
           </tr>
           <tr>
             <td style="padding:24px 40px 8px 40px; background-color:#1B1815;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout:fixed;">
                 <tr>
-                  <!-- Step One -->
                   <td class="steps-col" width="48%" valign="top" align="center" style="padding:0;">
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid rgba(244,236,221,0.16);">
                       <tr>
@@ -342,16 +296,13 @@
                           <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:26px; color:#C2724A; text-align:center;">One</div>
                           <div style="font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:16px; line-height:1.4; color:#F4ECDD; text-align:center; padding-top:10px;">Read the FAQ</div>
                           <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:13px; line-height:1.6; color:#C4B5A0; text-align:center; padding-top:8px;">Everything on the week, the stay, and what is included.</div>
-                          <div style="padding-top:14px;">
-                            <a href="https://rareseasons.com/pages/ericeira-portugal-2026" target="_blank" style="font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#F4ECDD; text-decoration:underline; text-underline-offset:3px;">Open the FAQ</a>
-                          </div>
+                          <div style="padding-top:14px;"><a href="https://rareseasons.com/pages/ericeira-portugal-2026" target="_blank" style="font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#F4ECDD; text-decoration:underline; text-underline-offset:3px;">Open the FAQ</a></div>
                         </td>
                       </tr>
                     </table>
                   </td>
                   <td class="steps-col-mid" width="4%" style="font-size:0; line-height:0;">&nbsp;</td>
                   <td class="step-gap" style="display:none; font-size:0; line-height:0; height:0;">&nbsp;</td>
-                  <!-- Step Two -->
                   <td class="steps-col" width="48%" valign="top" align="center" style="padding:0;">
                     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid rgba(244,236,221,0.16);">
                       <tr>
@@ -359,9 +310,7 @@
                           <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:26px; color:#C2724A; text-align:center;">Two</div>
                           <div style="font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:16px; line-height:1.4; color:#F4ECDD; text-align:center; padding-top:10px;">Complete the Waiver</div>
                           <div style="font-family:'Lato',Arial,sans-serif; font-weight:300; font-size:13px; line-height:1.6; color:#C4B5A0; text-align:center; padding-top:8px;">A short participation agreement before we hold your spot.</div>
-                          <div style="padding-top:14px;">
-                            <a href="https://rareseasons.com/pages/participation-agreement" target="_blank" style="font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#F4ECDD; text-decoration:underline; text-underline-offset:3px;">Open the Waiver</a>
-                          </div>
+                          <div style="padding-top:14px;"><a href="https://rareseasons.com/pages/participation-agreement" target="_blank" style="font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:#F4ECDD; text-decoration:underline; text-underline-offset:3px;">Open the Waiver</a></div>
                         </td>
                       </tr>
                     </table>
@@ -370,7 +319,6 @@
               </table>
             </td>
           </tr>
-          <!-- Step Three -->
           <tr>
             <td align="center" style="padding:30px 40px 58px 40px; background-color:#1B1815;">
               <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:26px; color:#C2724A; text-align:center;">Three</div>
@@ -386,32 +334,20 @@
             </td>
           </tr>
 
-          <!-- ============ FOOTER ============ -->
+          <!-- FOOTER -->
           <tr>
             <td align="center" style="padding:50px 40px 46px 40px; background-color:#F4ECDD;">
-              <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:28px; letter-spacing:0.01em; color:#1B1815; text-align:center;">
-                rare seasons
-              </div>
-              <div style="padding-top:18px;">
-                <img src="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/d9581f8e-7b72-40c4-b013-0fe7d2df6748.png" width="46" height="46" alt="Rare Seasons diamond mark" style="display:inline-block; width:46px; height:auto; border:0;">
-              </div>
+              <div style="font-family:'Lora',Georgia,serif; font-style:italic; font-weight:500; font-size:28px; letter-spacing:0.01em; color:#1B1815; text-align:center;">rare seasons</div>
+              <div style="padding-top:18px;"><img src="https://d3k81ch9hvuctc.cloudfront.net/company/TKHhsj/images/d9581f8e-7b72-40c4-b013-0fe7d2df6748.png" width="46" height="46" alt="Rare Seasons diamond mark" style="display:inline-block; width:46px; height:auto; border:0;"></div>
               <div style="width:46px; height:1px; background-color:#C2724A; line-height:1px; font-size:0; margin:22px auto 20px auto;">&nbsp;</div>
-              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#332D27; text-align:center;">
-                Luxury.&nbsp;Social.&nbsp;Wellness
-              </div>
+              <div style="font-family:'Lato',Arial,sans-serif; font-weight:500; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:#332D27; text-align:center;">Luxury.&nbsp;Social.&nbsp;Wellness</div>
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center" style="margin:24px auto 0 auto;">
                 <tr>
-                  <td style="padding:0 14px; font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;">
-                    <a href="https://www.instagram.com/rareseasons.co/" target="_blank" style="color:#A85F3D; text-decoration:none;">Instagram</a>
-                  </td>
+                  <td style="padding:0 14px; font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;"><a href="https://www.instagram.com/rareseasons.co/" target="_blank" style="color:#A85F3D; text-decoration:none;">Instagram</a></td>
                   <td style="padding:0; color:#C4B5A0; font-size:11px;">&middot;</td>
-                  <td style="padding:0 14px; font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;">
-                    <a href="https://rareseasons.com/" target="_blank" style="color:#A85F3D; text-decoration:none;">Website</a>
-                  </td>
+                  <td style="padding:0 14px; font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;"><a href="https://rareseasons.com/" target="_blank" style="color:#A85F3D; text-decoration:none;">Website</a></td>
                   <td style="padding:0; color:#C4B5A0; font-size:11px;">&middot;</td>
-                  <td style="padding:0 14px; font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;">
-                    <a href="mailto:aaron@rareseasons.com" target="_blank" style="color:#A85F3D; text-decoration:none;">Email</a>
-                  </td>
+                  <td style="padding:0 14px; font-family:'Lato',Arial,sans-serif; font-weight:700; font-size:11px; letter-spacing:0.14em; text-transform:uppercase;"><a href="mailto:aaron@rareseasons.com" target="_blank" style="color:#A85F3D; text-decoration:none;">Email</a></td>
                 </tr>
               </table>
             </td>
@@ -419,7 +355,6 @@
 
         </table>
         <!--[if mso]></td></tr></table><![endif]-->
-
       </td>
     </tr>
   </table>
